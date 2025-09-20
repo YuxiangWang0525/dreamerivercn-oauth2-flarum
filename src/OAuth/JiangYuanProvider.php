@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the jiangyuan/oauth2-flarum extension.
+ * This file is part of the dreamerivercn/oauth2-flarum extension.
  *
  * (c) 江愿文化 <support@dreameriver.cn>
  *
@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace JiangYuan\OAuth\OAuth;
+namespace Dreamerivercn\OAuth\OAuth;
 
 use League\OAuth2\Client\Provider\AbstractProvider;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
@@ -17,7 +17,7 @@ use League\OAuth2\Client\Token\AccessToken;
 use League\OAuth2\Client\Tool\BearerAuthorizationTrait;
 use Psr\Http\Message\ResponseInterface;
 
-class JiangYuanProvider extends AbstractProvider
+class DreamerivercnProvider extends AbstractProvider
 {
     use BearerAuthorizationTrait;
 
@@ -94,10 +94,10 @@ class JiangYuanProvider extends AbstractProvider
      *
      * @param array $response
      * @param AccessToken $token
-     * @return JiangYuanResourceOwner
+     * @return DreamerivercnResourceOwner
      */
     protected function createResourceOwner(array $response, AccessToken $token)
     {
-        return new JiangYuanResourceOwner($response);
+        return new DreamerivercnResourceOwner($response);
     }
 }

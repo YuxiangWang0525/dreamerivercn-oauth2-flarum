@@ -1,8 +1,8 @@
 {
-    "name": "jiangyuan/oauth2-flarum",
-    "description": "江愿通行证OAuth2登录插件，允许用户使用江愿通行证账户登录Flarum论坛",
+    "name": "dreamerivercn/oauth2-flarum",
+    "description": "Dreameriver.cn OAuth2登录插件，允许用户使用Dreameriver.cn账户登录Flarum论坛",
     "type": "flarum-extension",
-    "keywords": ["flarum", "oauth2", "authentication", "jiangyuan"],
+    "keywords": ["flarum", "oauth2", "authentication", "dreamerivercn"],
     "license": "MIT",
     "authors": [
         {
@@ -13,8 +13,8 @@
     ],
     "support": {
         "email": "support@dreameriver.cn",
-        "issues": "https://github.com/jiangyuan/flarum-oauth2/issues",
-        "source": "https://github.com/jiangyuan/flarum-oauth2"
+        "issues": "https://github.com/dreamerivercn/flarum-oauth2/issues",
+        "source": "https://github.com/dreamerivercn/flarum-oauth2"
     },
     "require": {
         "flarum/core": "^1.0",
@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "JiangYuan\\OAuth\\": "src/"
+            "Dreamerivercn\\OAuth\\": "src/"
         }
     },
     "extra": {
         "flarum-extension": {
-            "title": "江愿通行证OAuth2登录",
+            "title": "Dreameriver.cn OAuth2登录",
             "category": "feature",
             "icon": {
                 "name": "fas fa-sign-in-alt",

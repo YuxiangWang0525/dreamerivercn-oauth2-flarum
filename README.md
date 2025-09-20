@@ -1,28 +1,28 @@
-# JiangYuan OAuth2 for Flarum
+# Dreameriver.cn OAuth2 for Flarum
 
-[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jiangyuan/flarum-oauth2/blob/main/LICENSE)
+[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/dreamerivercn/flarum-oauth2/blob/main/LICENSE)
 
-江愿通行证OAuth2登录插件，允许用户使用江愿通行证账户登录Flarum论坛。
+Dreameriver.cn OAuth2登录插件，允许用户使用Dreameriver.cn账户登录Flarum论坛。
 
 ## 安装
 
 使用 [Composer](https://getcomposer.org/) 安装:
 
 ```bash
-composer require jiangyuan/oauth2-flarum
+composer require dreamerivercn/oauth2-flarum
 ```
 
 ## 配置
 
 1. 进入Flarum管理后台
-2. 启用"江愿通行证OAuth2登录"插件
+2. 启用"Dreameriver.cn OAuth2登录"插件
 3. 点击插件设置按钮
-4. 输入从江愿通行证获取的客户端ID和客户端密钥
+4. 输入从Dreameriver.cn通行证获取的客户端ID和客户端密钥
 5. 保存设置
 
 ## 使用
 
-启用并配置插件后，用户可以在登录和注册页面看到"使用江愿通行证登录"按钮。点击该按钮将重定向到江愿通行证进行身份验证。
+启用并配置插件后，用户可以在登录和注册页面看到"使用Dreameriver.cn通行证登录"按钮。点击该按钮将重定向到Dreameriver.cn通行证进行身份验证。
 
 ## 技术细节
 

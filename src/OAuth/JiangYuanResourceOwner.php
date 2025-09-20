@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the jiangyuan/oauth2-flarum extension.
+ * This file is part of the dreamerivercn/oauth2-flarum extension.
  *
  * (c) 江愿文化 <support@dreameriver.cn>
  *
@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace JiangYuan\OAuth\OAuth;
+namespace Dreamerivercn\OAuth\OAuth;
 
 use League\OAuth2\Client\Provider\ResourceOwnerInterface;
 use League\OAuth2\Client\Tool\ArrayAccessorTrait;
 
-class JiangYuanResourceOwner implements ResourceOwnerInterface
+class DreamerivercnResourceOwner implements ResourceOwnerInterface
 {
     use ArrayAccessorTrait;
 

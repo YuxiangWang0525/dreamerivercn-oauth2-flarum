@@ -1,15 +1,15 @@
-# 中文语言文件 - 江愿通行证OAuth2插件
+# 中文语言文件 - Dreameriver.cn OAuth2插件
 
-jiangyuan-oauth2-flarum:
+dreamerivercn-oauth2-flarum:
   admin:
     settings:
       client_id_label: 客户端ID
-      client_id_help: 在江愿通行证创建应用时获得的客户端ID。
+      client_id_help: 在Dreameriver.cn通行证创建应用时获得的客户端ID。
       client_secret_label: 客户端密钥
-      client_secret_help: 在江愿通行证创建应用时获得的客户端密钥。
+      client_secret_help: 在Dreameriver.cn通行证创建应用时获得的客户端密钥。
       auth_url_label: 认证URL
-      auth_url_help: 江愿通行证认证的基础URL（通常不需要更改）。
+      auth_url_help: Dreameriver.cn通行证认证的基础URL（通常不需要更改）。
 
   forum:
-    log_in_with_jiangyuan: 使用江愿通行证登录
-    sign_up_with_jiangyuan: 使用江愿通行证注册
+    log_in_with_dreamerivercn: 使用Dreameriver.cn通行证登录
+    sign_up_with_dreamerivercn: 使用Dreameriver.cn通行证注册

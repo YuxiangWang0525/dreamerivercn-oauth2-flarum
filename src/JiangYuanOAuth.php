@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the jiangyuan/oauth2-flarum extension.
+ * This file is part of the dreamerivercn/oauth2-flarum extension.
  *
  * (c) 江愿文化 <support@dreameriver.cn>
  *
@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace JiangYuan\OAuth;
+namespace Dreamerivercn\OAuth;
 
 use Flarum\Extend;
 use Flarum\Forum\AuthenticationResponseFactory;
@@ -30,7 +30,7 @@ use League\OAuth2\Client\Provider\AbstractProvider;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Token\AccessToken as OAuthToken;
 
-class JiangYuanOAuth
+class DreamerivercnOAuth
 {
     /**
      * @var AuthenticationResponseFactory
