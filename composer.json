@@ -23,7 +23,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Dreamerivercn\\OAuth\\": "src/"
+            "Dreamerivercn\\OAuth\\": "src/",
+            "Dreamerivercn\\OAuth\\Controllers\\": "src/Controllers/"
         }
     },
     "extra": {

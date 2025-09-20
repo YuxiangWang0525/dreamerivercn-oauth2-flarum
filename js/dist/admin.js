@@ -8,6 +8,9 @@
   }
 
   app.initializers.add('dreamerivercn/oauth2-flarum', function() {
+    // 极简版Dreameriver.cn OAuth2 Flarum插件管理端
+    console.log('Dreameriver.cn OAuth2 Flarum插件管理端已加载');
+
     // 确保extensionData和相关方法存在
     if (app.extensionData && typeof app.extensionData.for === 'function') {
       app.extensionData

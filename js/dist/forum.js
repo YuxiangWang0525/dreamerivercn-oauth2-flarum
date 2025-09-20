@@ -8,6 +8,7 @@
   }
 
   app.initializers.add('dreamerivercn/oauth2-flarum', function() {
+    // 极简版Dreameriver.cn OAuth2 Flarum插件前端
     console.log('Dreameriver.cn OAuth2 Flarum插件前端已加载');
   });
 })();
