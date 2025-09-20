@@ -1,14 +1,14 @@
-(function() {
-  'use strict';
-  
-  // 确保app对象存在
-  if (typeof app === 'undefined') {
-    console.error('Flarum app对象未定义');
-    return;
-  }
+'use strict';
 
-  app.initializers.add('dreamerivercn/oauth2-flarum', function() {
-    // 极简版Dreameriver.cn OAuth2 Flarum插件前端
-    console.log('Dreameriver.cn OAuth2 Flarum插件前端已加载');
+app.initializers.add('dreamerivercn/oauth2-flarum', function(app) {
+  // 扩展登录按钮
+  app.extensionUtils.extend('flarum/forum/components/LogInButtons', 'items', function (items) {
+    items.add('dreamerivercn',
+      <a className="Button LogInButton--dreamerivercn" href={app.route('auth.dreamerivercn')}>
+        <i className="fas fa-sign-in-alt"></i> {app.translator.trans('dreamerivercn-oauth2-flarum.forum.log_in_with_dreamerivercn')}
+      </a>
+    );
+    
+    return items;
   });
-})();
+});
