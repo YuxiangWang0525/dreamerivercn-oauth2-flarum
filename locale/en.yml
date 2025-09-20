@@ -1,0 +1,15 @@
+# English language file for the JiangYuan OAuth2 extension
+
+jiangyuan-oauth2-flarum:
+  admin:
+    settings:
+      client_id_label: Client ID
+      client_id_help: The Client ID you received when creating the app in JiangYuan Passport.
+      client_secret_label: Client Secret
+      client_secret_help: The Client Secret you received when creating the app in JiangYuan Passport.
+      auth_url_label: Authentication URL
+      auth_url_help: The base URL for JiangYuan Passport authentication (should not need to be changed).
+
+  forum:
+    log_in_with_jiangyuan: Log in with JiangYuan Passport
+    sign_up_with_jiangyuan: Sign up with JiangYuan Passport
