@@ -10,31 +10,25 @@
  */
 
 use Flarum\Extend;
-use Flarum\Forum\Content\RegisterUser;
 use Flarum\Forum\Controller\LogInController;
 use Flarum\Forum\Controller\RegisterController;
-use Flarum\Settings\SettingsRepositoryInterface;
-use Illuminate\Contracts\Container\Container;
-use Dreamerivercn\OAuth\DreamerivercnOAuth;
-use Dreamerivercn\OAuth\OAuth\DreamerivercnProvider;
+use Dreamerivercn\OAuth\Controllers\SettingsController;
 
 return [
     (new Extend\Frontend('admin'))
-        ->js(__DIR__.'/js/dist/admin.js')
         ->css(__DIR__.'/less/admin.less'),
 
     (new Extend\Frontend('forum'))
-        ->js(__DIR__.'/js/dist/forum.js')
         ->css(__DIR__.'/less/forum.less'),
+
+    (new Extend\Routes('admin'))
+        ->get('/dreamerivercn/oauth2/settings', 'dreamerivercn.oauth2.settings', SettingsController::class),
 
     (new Extend\Routes('forum'))
         ->get('/auth/dreamerivercn', 'auth.dreamerivercn', LogInController::class),
 
     (new Extend\Routes('forum'))
         ->get('/register/dreamerivercn', 'register.dreamerivercn', RegisterController::class),
-
-    (new Extend\Routes('admin'))
-        ->get('/dreamerivercn/oauth2/settings', 'dreamerivercn.oauth2.settings', SettingsController::class),
 
     (new Extend\Settings())
         ->serializeToForum('dreamerivercnAuthUrl', 'dreamerivercn-oauth.auth_url')

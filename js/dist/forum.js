@@ -1,6 +1,7 @@
 'use strict';
 
 app.initializers.add('dreamerivercn/oauth2-flarum', function(app) {
+  console.log('Dreameriver.cn OAuth2 Flarum插件前端已加载');
   // 扩展登录按钮
   app.extensionUtils.extend('flarum/forum/components/LogInButtons', 'items', function (items) {
     items.add('dreamerivercn',

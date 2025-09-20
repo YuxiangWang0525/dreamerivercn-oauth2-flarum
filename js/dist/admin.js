@@ -1,6 +1,7 @@
 'use strict';
 
 app.initializers.add('dreamerivercn/oauth2-flarum', function(app) {
+  console.log('Dreameriver.cn OAuth2 Flarum插件管理端已加载');
   app.extensionData
     .for('dreamerivercn/oauth2-flarum')
     .registerSetting({
